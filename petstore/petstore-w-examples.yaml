@@ -773,6 +773,20 @@ components:
       xml:
         name: pet
       type: object
+      title: ''
+      x-examples:
+        bulldog:
+          id: 11
+          name: Tillman
+          category:
+            id: 1
+            name: Dogs
+          photoUrls:
+            - 'https://petstore.com/asset/123.jpg'
+          tags:
+            id: 21
+            name: bulldog
+          status: available
     ApiResponse:
       properties:
         code:
