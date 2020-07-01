@@ -204,12 +204,23 @@ paths:
         '200':
           description: successful operation
           content:
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/Pet'
             application/json:
               schema:
                 $ref: '#/components/schemas/Pet'
+              examples:
+                German Shephard:
+                  value:
+                    id: 12
+                    name: Hanz
+                    category:
+                      id: 1
+                      name: Dogs
+                    photoUrls:
+                      - 'https://petstore.com/asset/124.jpg'
+                    tags:
+                      id: 22
+                      name: shephard
+                    status: available
         '400':
           description: Invalid ID supplied
         '404':
